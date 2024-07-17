@@ -17,9 +17,15 @@
     font-style: normal;
   } */
 
+  /* .libre-caslon-display-regular {
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -228,6 +234,7 @@ body {
     border: 1px solid #ccc;
     text-align: center;
     height: 360px;
+    border-radius: 10px;
 }
 
 /* KONTENER */
@@ -237,6 +244,128 @@ body {
     gap: 24px;
     
 }
+
+.slider {
+    background-color: #1a252f;
+    height: 450px;
+    width: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.slider h1 {
+    color:#ececec;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-size: 55px;
+}
+
+.slider h2 {
+    color:#ececec;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.slider button {
+    background-color: #8ed1fc;
+    color: white;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.slider button:hover {
+    background-color: #73C6D9;
+}
+
+
+.background-footer {
+    background-color: #ececec;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.footer {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    justify-content: space-around;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer ul li {
+    cursor: pointer;
+}
+
+
+.danekontakt {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* ZAMÓWIENIE */
+
+.main-zamowienie {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-zamowienie::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/tlo-zamowienia.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.main-zamowienie h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 90px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1E1E1E;
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+}
+.main-zamowienie h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    color: #C34A4A;
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+}
+
+
 /* MEDIA DO KART NASZE PRODUKTY W ROZNYCH ROZMIARACH */
 
 @media (max-width: 1200px) {
@@ -320,8 +449,6 @@ body {
         font-size: 28px;
     }
 }
-
-
 
 
 @media (min-width: 1400px){
