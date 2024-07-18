@@ -272,7 +272,7 @@ body {
 }
 
 .slider button {
-    background-color: #8ed1fc;
+    background-color: #6db7e6;
     color: white;
     text-decoration: none;
     width: 150px;
@@ -285,8 +285,17 @@ body {
     cursor: pointer;
 }
 
+.slider button a {
+    color:#f0f0f0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .slider button:hover {
-    background-color: #73C6D9;
+    background-color: #5cabbd;
 }
 
 
@@ -309,6 +318,13 @@ body {
     flex-direction: column;
     gap: 25px;
 }
+
+.footer ul a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
 .footer ul li {
     cursor: pointer;
 }
@@ -365,6 +381,100 @@ body {
     font-weight: 400;
 }
 
+.main-onas {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-onas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/tlo-onas.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.main-onas h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 90px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1E1E1E;
+    font-family: "Libre Caslon Display", serif;
+}
+
+.main-onas h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    color: #C34A4A;
+    font-family: "Libre Caslon Display", serif;
+}
+
+.main-onas p {
+    text-align: center;
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1E1E1E;
+    font-family: "Libre Caslon Display", serif;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.mapy {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.lokalizacja h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1E1E1E;
+    font-family: "Libre Caslon Display", serif;
+}
+
+.lokalizacja h2 {
+    
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    color: #C34A4A;
+    font-family: "Libre Caslon Display", serif;
+}
+
+.lokalizacja h3 {
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+    color: #1E1E1E;
+    font-family: "Libre Caslon Display", serif;
+}
 
 /* MEDIA DO KART NASZE PRODUKTY W ROZNYCH ROZMIARACH */
 
@@ -422,6 +532,17 @@ body {
     font-size: 10px;
     text-align: center;
     }
+
+    .mapy {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px){
+    iframe {
+        height: 250px;
+        width: 400px;
+    }
 }
 
 
@@ -429,27 +550,30 @@ body {
     .container {
         padding: 10px;
     }
-
     .logo img {
         height: 40px;
     }
-
     .mobile-nav ul {
         padding: 10px;
         font-size: 14px;
     }
-
     .btn {
         padding: 8px 15px;
     }
-    .maintlo h1 {
+    .maintlo h1, .main-zamowienie h1, .main-onas h1, .lokalizacja h1 {
         font-size: 50px;
     }
-    .maintlo h2 {
+    .maintlo h2, .main-zamowienie h2, .main-onas h2 {
         font-size: 28px;
     }
+    .main-onas p {
+        font-size: 18px;
+    }
+    iframe {
+        height: 150px;
+        width: 300px;
+    }
 }
-
 
 @media (min-width: 1400px){
 
