@@ -37,6 +37,13 @@ body {
     font-weight: 400;
 }
 
+header {
+    position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+}
+
 .navbar {
     background-color: white;
 }
@@ -52,7 +59,7 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 150px;
 }
 
 
@@ -159,7 +166,7 @@ body {
     background-image: url('img/tlo1.png');
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,6 +230,20 @@ body {
     border-radius: 10px;
     height: 210px;
     gap: 20px;
+    display: flex;
+}
+
+
+.card-product-img {
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+}
+
+.card-produkt img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 
@@ -235,8 +256,26 @@ body {
     text-align: center;
     height: 360px;
     border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.tekst-content {
+    padding: 15px;
+}
+
+.tekst-content h5 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.tekst-content p {
+    margin: 0;
+    color: #555;
+}
 /* KONTENER */
 .cards2 {
     display: flex;
@@ -301,8 +340,9 @@ body {
 
 .background-footer {
     background-color: #ececec;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 30px;
+    font-weight: 500;
 }
 .footer {
     display: flex;
@@ -340,7 +380,7 @@ body {
 /* ZAMÓWIENIE */
 
 .main-zamowienie {
-    height: 89vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,7 +422,7 @@ body {
 }
 
 .main-onas {
-    height: 89vh;
+    height: 99vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -476,6 +516,29 @@ body {
     font-family: "Libre Caslon Display", serif;
 }
 
+
+.social-icon {
+    color: inherit; /* Dziedziczy kolor z rodzica */
+    text-decoration: none; /* Usuwa podkreślenie linku */
+}
+.social-icon:hover .fa-facebook {
+    color: inherit; /* Utrzymuje ten sam kolor podczas najechania kursorem */
+}
+
+.polityka {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    max-width: 1400px;
+    margin-top: 10vh;
+}
+
+.main-kontakt {
+    height: 100vh;
+}
 /* MEDIA DO KART NASZE PRODUKTY W ROZNYCH ROZMIARACH */
 
 @media (max-width: 1200px) {
@@ -551,7 +614,7 @@ body {
         padding: 10px;
     }
     .logo img {
-        height: 40px;
+        height: 100px;
     }
     .mobile-nav ul {
         padding: 10px;
