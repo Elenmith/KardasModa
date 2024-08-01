@@ -240,6 +240,7 @@ header {
   .paragraph-content p {
     margin: 0 0 20px;
     color:#555;
+    font-size: clamp(9px, 2vw, 16px);
   } 
   
   .btn-zobacz {
@@ -253,6 +254,7 @@ header {
     background-color: #8ed1fc;
     color: white;
     cursor: pointer;
+    font-size: clamp(9px, 2vw, 16px);
   }
   
   .btn-zobacz:hover {
@@ -714,5 +716,27 @@ header {
     }
     .maintlo h2 {
         font-size: 60px;
+    }
+}
+
+@media (max-width: 480px){
+    .slider h1 {
+        font-size: 2.5rem;
+    }
+    .slider h2 {
+        font-size: 1.2rem;
+    }
+    .danekontakt p {
+        font-size: 0.75rem;
+    }
+    .socialemedia {
+        display: flex;
+        justify-content: end;
+    }
+    .social-icon {
+        margin-top: auto;
+    }
+    .card-grid-headings {
+        margin-top: 5%;
     }
 }
